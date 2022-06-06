@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../controllers/menu_controller.dart';
+import "package:flutter_web_admin_page/constants/controllers.dart";
 
 class HorizontalMenuItem extends StatelessWidget {
   final String itemName;
@@ -17,8 +16,8 @@ class HorizontalMenuItem extends StatelessWidget {
       onTap: onTap,
       onHover: (value) {
         value
-            ? MenuController.onHover(itemName)
-            : MenuController.onHover("not hovering");
+            ? menuController.onHover(itemName)
+            : menuController.onHover("not hovering");
       },
     );
   }
