@@ -7,7 +7,7 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
     AppBar(
         leading: !ResponsiveWidget.isSmallScreen(context)
             ? Row(
-                children: [
+                children: <Widget>[
                   Container(
                     padding: const EdgeInsets.only(left: 14),
                     child: Image.asset(
@@ -25,14 +25,23 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               ),
         elevation: 0,
         title: Row(
-          children: [
+          children: <Widget>[
             Visibility(
               child: CustomText(
-                text: "hello",
+                text: "管理画面",
                 color: lightGrey,
                 size: 20,
                 weight: FontWeight.bold,
               ),
+            ),
+            Expanded(child: Container()),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.settings),
+              color: dark.withOpacity(0.7),
+            ),
+            Stack(
+              children: <Widget>[],
             )
           ],
         )
