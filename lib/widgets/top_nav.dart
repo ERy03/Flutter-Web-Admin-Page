@@ -46,7 +46,24 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
                   onPressed: () {},
                   icon: const Icon(Icons.notifications),
                   color: dark.withOpacity(0.7),
-                )
+                ),
+                Positioned(
+                  top: 7,
+                  right: 7,
+                  child: Container(
+                    width: 12,
+                    height: 12,
+                    padding: const EdgeInsets.all(4),
+                    decoration: BoxDecoration(
+                      color: active,
+                      borderRadius: BorderRadius.circular(30),
+                      border: Border.all(
+                        color: light,
+                        width: 2,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             )
           ],
