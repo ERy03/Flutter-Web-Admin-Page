@@ -20,12 +20,15 @@ class MyApp extends StatelessWidget {
             GoogleFonts.mulishTextTheme(Theme.of(context).textTheme).apply(
           bodyColor: Colors.black,
         ),
-      ),
-      home: Center(
-        child: Container(
-          child: const Text("Hello"),
+        pageTransitionsTheme: PageTransitionsTheme(
+          builders: {
+            TargetPlatform.iOS: FadeUpwardsPageTransitionsBuilder(),
+            TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
+          },
         ),
+        primaryColor: Colors.blue,
       ),
+      home: Container(),
     );
   }
 }
