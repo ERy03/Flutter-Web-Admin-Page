@@ -39,6 +39,16 @@ class VerticalMenuItem extends StatelessWidget {
                     color: dark,
                   ),
                 ),
+                Expanded(
+                    child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: menuController.returnIconFor(itemName),
+                    ),
+                  ],
+                ))
               ],
             ),
           )),
