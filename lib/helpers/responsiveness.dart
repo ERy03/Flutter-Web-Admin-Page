@@ -6,7 +6,18 @@ const int smallScreenSize = 360;
 const int customScreenSize = 1100;
 
 class ResponsiveWidget extends StatelessWidget {
-  const ResponsiveWidget({Key? key}) : super(key: key);
+  final Widget largeScreen;
+  final Widget mediumScreen;
+  final Widget smallScreen;
+  final Widget customScreen;
+
+  const ResponsiveWidget(
+      {Key? key,
+      required this.largeScreen,
+      required this.mediumScreen,
+      required this.smallScreen,
+      required this.customScreen})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
