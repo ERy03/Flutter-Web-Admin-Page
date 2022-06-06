@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/routing/routes.dart';
 import 'package:get/get.dart';
 
+import '../constants/style.dart';
+
 class MenuController extends GetxController {
   static MenuController instance = Get.find();
   var activeItem = overViewPageRoute.obs;
@@ -46,5 +48,17 @@ class MenuController extends GetxController {
     }
   }
 
-  Widget _customIcon(IconData trending_up, String itemName) {}
+  Widget _customIcon(IconData icon, String itemName) {
+    if (isActive(itemName)) {
+      return Icon(
+        icon,
+        size: 22,
+        color: dark,
+      );
+    }
+    return Icon(
+      icon,
+      color: isHovering(itemName) ? dark : lightGrey,
+    );
+  }
 }
