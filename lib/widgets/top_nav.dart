@@ -41,7 +41,13 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               color: dark.withOpacity(0.7),
             ),
             Stack(
-              children: <Widget>[],
+              children: <Widget>[
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.notifications),
+                  color: dark.withOpacity(0.7),
+                )
+              ],
             )
           ],
         )
