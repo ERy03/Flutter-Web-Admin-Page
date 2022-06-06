@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +14,13 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "管理画面",
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white,
+        textTheme:
+            GoogleFonts.mulishTextTheme(Theme.of(context).textTheme).apply(
+          bodyColor: Colors.black,
+        ),
+      ),
       home: Center(
         child: Container(
           child: const Text("Hello"),
