@@ -35,12 +35,14 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               ),
             ),
             Expanded(child: Container()),
+
             // Settings Button
             IconButton(
               onPressed: () {},
               icon: const Icon(Icons.settings),
               color: dark.withOpacity(0.7),
             ),
+
             // Notification Button
             Stack(
               children: <Widget>[
@@ -68,15 +70,26 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
                 ),
               ],
             ),
+
             // Vertical Divider
             Container(
               width: 1,
               height: 22,
               color: lightGrey,
             ),
+
+            // Spacing
             const SizedBox(
               width: 24,
             ),
+
+            // Text
+            CustomText(
+              text: "Ryota Enoki",
+              color: lightGrey,
+            ),
+
+            //
           ],
         )
         // backgroundColor: Colors.white,
