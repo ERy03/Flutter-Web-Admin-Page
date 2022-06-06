@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import "package:flutter_web_admin_page/constants/controllers.dart";
+import 'package:flutter_web_admin_page/constants/style.dart';
+import 'package:get/get.dart';
 
 class HorizontalMenuItem extends StatelessWidget {
   final String itemName;
-  final Function onTap;
+  final void Function() onTap;
 
   const HorizontalMenuItem(
       {Key? key, required this.itemName, required this.onTap})
@@ -11,7 +13,7 @@ class HorizontalMenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
+    double _width = MediaQuery.of(context).size.width;
     return InkWell(
       onTap: onTap,
       onHover: (value) {
@@ -19,6 +21,36 @@ class HorizontalMenuItem extends StatelessWidget {
             ? menuController.onHover(itemName)
             : menuController.onHover("not hovering");
       },
+      child: Obx(
+        () => Container(
+          color: menuController.isHovering(itemName)
+              ? lightGrey.withOpacity(.1)
+              : Colors.transparent,
+          child: Row(
+            children: <Widget>[
+              Visibility(
+                visible: menuController.isHovering(itemName) ||
+                    menuController.isActive(itemName),
+                maintainSize: true,
+                maintainAnimation: true,
+                maintainState: true,
+                child: Container(
+                  width: 6,
+                  height: 40,
+                  color: dark,
+                ),
+              ),
+              SizedBox(
+                width: _width / 80,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: menuController.returnIconFor(itemName),
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
