@@ -7,13 +7,13 @@ import 'package:flutter_web_admin_page/routing/routes.dart';
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case overViewPageRoute:
-      return _getPageRoute(OverViewPage());
+      return _getPageRoute(const OverViewPage());
     case driversPageRoute:
-      return _getPageRoute(DriversPage());
+      return _getPageRoute(const DriversPage());
     case clientsPageRoute:
-      return _getPageRoute(ClientsPage());
+      return _getPageRoute(const ClientsPage());
     default:
-      return _getPageRoute(OverViewPage());
+      return _getPageRoute(const OverViewPage());
   }
 }
 
