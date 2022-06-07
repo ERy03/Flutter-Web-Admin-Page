@@ -33,13 +33,20 @@ class SideMenu extends StatelessWidget {
                     ),
                     Flexible(
                       child: CustomText(
-                        text: "管理画面",
+                        text: "どこ？管理画面",
                         size: 20,
                         weight: FontWeight.bold,
                         color: active,
                       ),
                     ),
+                    SizedBox(width: width / 48)
                   ],
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
+                Divider(
+                  color: lightGrey.withOpacity(0.1),
                 ),
               ],
             )
