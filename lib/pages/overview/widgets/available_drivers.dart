@@ -64,11 +64,22 @@ class AvailableDrivers extends StatelessWidget {
               rows: List<DataRow>.generate(
                   7,
                   (index) => DataRow(cells: [
-                        DataCell(Text('A' * (10 - index % 10))),
-                        DataCell(Text('B' * (10 - (index + 5) % 10))),
-                        DataCell(Text('C' * (15 - (index + 5) % 10))),
-                        DataCell(Text('D' * (15 - (index + 10) % 10))),
-                        DataCell(Text(((index + 0.1) * 25.4).toString()))
+                        DataCell(CustomText(
+                          text: "Ryota Enoki",
+                        )),
+                        DataCell(CustomText(
+                          text: "New York City",
+                        )),
+                        DataCell(Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: const [
+                            Icon(
+                              Icons.star,
+                              color: Colors.deepOrange,
+                              size: 18,
+                            )
+                          ],
+                        ))
                       ]))),
         ],
       ),
