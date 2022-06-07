@@ -72,12 +72,18 @@ class AvailableDrivers extends StatelessWidget {
                         )),
                         DataCell(Row(
                           mainAxisSize: MainAxisSize.min,
-                          children: const [
-                            Icon(
+                          children: [
+                            const Icon(
                               Icons.star,
                               color: Colors.deepOrange,
                               size: 18,
-                            )
+                            ),
+                            const SizedBox(
+                              width: 5,
+                            ),
+                            CustomText(
+                              text: "4.$index",
+                            ),
                           ],
                         ))
                       ]))),
