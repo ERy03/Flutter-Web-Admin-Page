@@ -9,7 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 void main() {
   Get.put(MenuController());
   Get.put(NavigationController());
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
             GoogleFonts.mulishTextTheme(Theme.of(context).textTheme).apply(
           bodyColor: Colors.black,
         ),
-        pageTransitionsTheme: PageTransitionsTheme(
+        pageTransitionsTheme: const PageTransitionsTheme(
           builders: {
             TargetPlatform.iOS: FadeUpwardsPageTransitionsBuilder(),
             TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
