@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_admin_page/widgets/side_menu.dart';
 
 class MediumScreen extends StatelessWidget {
   const MediumScreen({Key? key}) : super(key: key);
@@ -8,9 +9,7 @@ class MediumScreen extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          child: Container(
-            color: Colors.red,
-          ),
+          child: SideMenu(),
         ),
         Expanded(
           flex: 6,

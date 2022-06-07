@@ -12,7 +12,7 @@ class SideMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
+    double _width = MediaQuery.of(context).size.width;
     return Container(
       color: light,
       child: ListView(
@@ -27,7 +27,7 @@ class SideMenu extends StatelessWidget {
                 Row(
                   children: [
                     SizedBox(
-                      width: width / 48,
+                      width: _width / 48,
                     ),
                     Padding(
                       padding: const EdgeInsets.only(
@@ -43,40 +43,40 @@ class SideMenu extends StatelessWidget {
                         color: active,
                       ),
                     ),
-                    SizedBox(width: width / 48)
+                    SizedBox(width: _width / 48)
                   ],
                 ),
-                const SizedBox(
-                  height: 40,
-                ),
-                Divider(
-                  color: lightGrey.withOpacity(0.1),
-                ),
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: sideMenuItems
-                      .map((itemName) => SideMenuItem(
-                            itemName: itemName == authenticationPageRoute
-                                ? "Log Out"
-                                : itemName,
-                            onTap: () {
-                              if (itemName == authenticationPageRoute) {
-                                //TODO
-                              }
-
-                              if (!menuController.isActive(itemName)) {
-                                menuController.changeActiveItemTo(itemName);
-                                if (ResponsiveWidget.isSmallScreen(context)) {
-                                  Get.back();
-                                  //TODO
-                                }
-                              }
-                            },
-                          ))
-                      .toList(),
-                )
               ],
-            )
+            ),
+          const SizedBox(
+            height: 40,
+          ),
+          Divider(
+            color: lightGrey.withOpacity(0.1),
+          ),
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: sideMenuItems
+                .map((itemName) => SideMenuItem(
+                      itemName: itemName == authenticationPageRoute
+                          ? "Log Out"
+                          : itemName,
+                      onTap: () {
+                        if (itemName == authenticationPageRoute) {
+                          //TODO
+                        }
+
+                        if (!menuController.isActive(itemName)) {
+                          menuController.changeActiveItemTo(itemName);
+                          if (ResponsiveWidget.isSmallScreen(context)) {
+                            Get.back();
+                            //TODO
+                          }
+                        }
+                      },
+                    ))
+                .toList(),
+          )
         ],
       ),
     );
