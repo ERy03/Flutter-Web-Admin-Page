@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
 import 'package:flutter_web_admin_page/helpers/responsiveness.dart';
+import 'package:flutter_web_admin_page/routing/routes.dart';
 import 'package:flutter_web_admin_page/widgets/custom_text.dart';
+import 'package:flutter_web_admin_page/widgets/side_menu_item.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({Key? key}) : super(key: key);
@@ -48,6 +50,20 @@ class SideMenu extends StatelessWidget {
                 Divider(
                   color: lightGrey.withOpacity(0.1),
                 ),
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: sideMenuItems
+                      .map((itemName) => SideMenuItem(
+                          itemName: itemName == authenticationPageRoute
+                              ? "Log Out"
+                              : itemName,
+                          onTap: () {
+                            if (itemName == authenticationPageRoute) {
+                              //TODO
+                            }
+                          }))
+                      .toList(),
+                )
               ],
             )
         ],
