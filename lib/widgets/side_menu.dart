@@ -37,7 +37,7 @@ class SideMenu extends StatelessWidget {
                     ),
                     Flexible(
                       child: CustomText(
-                        text: "どこ？管理画面",
+                        text: "管理画面",
                         size: 20,
                         weight: FontWeight.bold,
                         color: active,
