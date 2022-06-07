@@ -67,7 +67,20 @@ class RevenueSectionLarge extends StatelessWidget {
                     amount: "150",
                   ),
                 ],
-              )
+              ),
+              const SizedBox(height: 30),
+              Row(
+                children: [
+                  RevenueInfo(
+                    title: "Last 30 days",
+                    amount: "1,203",
+                  ),
+                  RevenueInfo(
+                    title: "Last 12 months",
+                    amount: "3,234",
+                  ),
+                ],
+              ),
             ],
           ))
         ],
