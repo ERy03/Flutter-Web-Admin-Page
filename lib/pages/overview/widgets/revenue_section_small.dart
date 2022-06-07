@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
+import 'package:flutter_web_admin_page/pages/overview/widgets/bar_chart.dart';
 import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 
 class RevenueSectionSmall extends StatelessWidget {
@@ -37,6 +38,11 @@ class RevenueSectionSmall extends StatelessWidget {
                   size: 20,
                   weight: FontWeight.bold,
                   color: lightGrey,
+                ),
+                Container(
+                  width: 600,
+                  height: 200,
+                  child: SimpleBarChart.withSampleData(),
                 ),
               ],
             ),
