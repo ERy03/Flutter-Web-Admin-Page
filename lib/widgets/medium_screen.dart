@@ -14,7 +14,12 @@ class MediumScreen extends StatelessWidget {
         ),
         Expanded(
           flex: 6,
-          child: localNavigator(),
+          child: Container(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16,
+            ),
+            child: localNavigator(),
+          ),
         ),
       ],
     );

@@ -4,14 +4,14 @@ import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 
 class InfoCardSmall extends StatelessWidget {
   final String title;
-  final String? value;
+  final String value;
   final bool isActive;
   final void Function()? onTap;
 
   const InfoCardSmall(
       {Key? key,
       required this.title,
-      this.value,
+      required this.value,
       this.isActive = false,
       this.onTap})
       : super(key: key);
@@ -41,7 +41,7 @@ class InfoCardSmall extends StatelessWidget {
                 color: isActive ? active : lightGrey,
               ),
               CustomText(
-                text: title,
+                text: value,
                 size: 24,
                 weight: FontWeight.bold,
                 color: isActive ? active : lightGrey,
