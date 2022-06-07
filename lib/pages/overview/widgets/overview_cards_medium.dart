@@ -27,9 +27,10 @@ class OverviewCardMediumScreenSize extends StatelessWidget {
               onTap: () {},
               topColor: Colors.lightGreen,
             ),
-            SizedBox(
-              width: _width / 64,
-            ),
+          ],
+        ),
+        Row(
+          children: [
             InfoCard(
               title: "Cancelled delivery",
               value: "3",
@@ -45,7 +46,7 @@ class OverviewCardMediumScreenSize extends StatelessWidget {
               onTap: () {},
             ),
           ],
-        )
+        ),
       ],
     );
   }
