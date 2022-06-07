@@ -29,6 +29,9 @@ class OverviewCardMediumScreenSize extends StatelessWidget {
             ),
           ],
         ),
+        const SizedBox(
+          height: 16,
+        ),
         Row(
           children: [
             InfoCard(
