@@ -12,7 +12,7 @@ class MyWidget extends StatelessWidget {
       {Key? key,
       required this.title,
       this.value,
-      required this.isActive,
+      this.isActive = false,
       this.onTap})
       : super(key: key);
 

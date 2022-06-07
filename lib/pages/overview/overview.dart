@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/controllers.dart';
 import 'package:flutter_web_admin_page/helpers/responsiveness.dart';
+import 'package:flutter_web_admin_page/pages/overview/widgets/overview_cards_large.dart';
 import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 import 'package:get/get.dart';
 
@@ -24,7 +25,14 @@ class OverViewPage extends StatelessWidget {
                   ),
                 )
               ],
-            ))
+            )),
+        Expanded(
+          child: ListView(
+            children: [
+              OverViewCardLargeScreen(),
+            ],
+          ),
+        ),
       ],
     );
   }
