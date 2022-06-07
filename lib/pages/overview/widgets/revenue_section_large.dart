@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
+import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 
 class RevenueSectionLarge extends StatelessWidget {
   const RevenueSectionLarge({Key? key}) : super(key: key);
@@ -23,6 +24,23 @@ class RevenueSectionLarge extends StatelessWidget {
           color: lightGrey,
           width: 0.5,
         ),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                CustomText(
+                  text: "Revenue Chart",
+                  size: 20,
+                  weight: FontWeight.bold,
+                  color: lightGrey,
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
