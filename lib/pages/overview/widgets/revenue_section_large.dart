@@ -10,15 +10,20 @@ class RevenueSectionLarge extends StatelessWidget {
       padding: const EdgeInsets.all(24),
       margin: const EdgeInsets.symmetric(vertical: 30),
       decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(8),
-          boxShadow: [
-            BoxShadow(
-              offset: const Offset(0, 6),
-              color: lightGrey.withOpacity(0.1),
-              blurRadius: 12,
-            )
-          ]),
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8),
+        boxShadow: [
+          BoxShadow(
+            offset: const Offset(0, 6),
+            color: lightGrey.withOpacity(0.1),
+            blurRadius: 12,
+          ),
+        ],
+        border: Border.all(
+          color: lightGrey,
+          width: 0.5,
+        ),
+      ),
     );
   }
 }
