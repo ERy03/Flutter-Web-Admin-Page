@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
 
 class InfoCard extends StatelessWidget {
-  final String title;
-  final String value;
-  final Color topColorl;
-  final bool isActive;
-  final void Function() onTap;
+  final String? title;
+  final String? value;
+  final Color? topColor;
+  final bool? isActive;
+  final void Function()? onTap;
 
   const InfoCard(
       {Key? key,
-      required this.title,
-      required this.value,
-      required this.topColorl,
-      required this.isActive,
-      required this.onTap})
+      this.title,
+      this.value,
+      this.topColor,
+      this.isActive,
+      this.onTap})
       : super(key: key);
 
   @override
@@ -35,6 +35,23 @@ class InfoCard extends StatelessWidget {
               )
             ],
             borderRadius: BorderRadius.circular(8),
+          ),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      color: topColor ?? active,
+                      height: 5,
+                    ),
+                  )
+                ],
+              ),
+              Expanded(child: Container()),
+              RichText(text: text),
+              Expanded(child: Container()),
+            ],
           ),
         ),
       ),
