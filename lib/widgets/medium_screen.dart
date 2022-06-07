@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_admin_page/helpers/local_navigator.dart';
 import 'package:flutter_web_admin_page/widgets/side_menu.dart';
 
 class MediumScreen extends StatelessWidget {
@@ -13,9 +14,7 @@ class MediumScreen extends StatelessWidget {
         ),
         Expanded(
           flex: 6,
-          child: Container(
-            color: Colors.yellow,
-          ),
+          child: localNavigator(),
         ),
       ],
     );
