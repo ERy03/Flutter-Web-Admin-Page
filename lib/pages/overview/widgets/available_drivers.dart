@@ -1,6 +1,7 @@
 import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
+import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 
 /// Example without a datasource
 class AvailableDrivers extends StatelessWidget {
@@ -29,6 +30,18 @@ class AvailableDrivers extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+          Row(
+            children: [
+              SizedBox(
+                width: 10,
+              ),
+              CustomText(
+                text: "Available Drivers",
+                color: lightGrey,
+                weight: FontWeight.bold,
+              ),
+            ],
+          ),
           DataTable2(
               columnSpacing: 12,
               horizontalMargin: 12,
