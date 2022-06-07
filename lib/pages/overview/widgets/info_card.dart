@@ -5,7 +5,7 @@ class InfoCard extends StatelessWidget {
   final String? title;
   final String? value;
   final Color? topColor;
-  final bool? isActive;
+  final bool isActive;
   final void Function()? onTap;
 
   const InfoCard(
@@ -13,7 +13,7 @@ class InfoCard extends StatelessWidget {
       this.title,
       this.value,
       this.topColor,
-      this.isActive,
+      required this.isActive,
       this.onTap})
       : super(key: key);
 
@@ -49,7 +49,25 @@ class InfoCard extends StatelessWidget {
                 ],
               ),
               Expanded(child: Container()),
-              RichText(text: text),
+              RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(children: [
+                  TextSpan(
+                    text: "$title\n",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: isActive ? active : lightGrey,
+                    ),
+                  ),
+                  TextSpan(
+                    text: "$value\n",
+                    style: TextStyle(
+                      fontSize: 40,
+                      color: isActive ? active : dark,
+                    ),
+                  ),
+                ]),
+              ),
               Expanded(child: Container()),
             ],
           ),
