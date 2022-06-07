@@ -56,14 +56,14 @@ class InfoCard extends StatelessWidget {
                     text: "$title\n",
                     style: TextStyle(
                       fontSize: 16,
-                      color: isActive ? active : lightGrey, //check
+                      color: isActive ? active : lightGrey,
                     ),
                   ),
                   TextSpan(
                     text: "$value\n",
                     style: TextStyle(
                       fontSize: 40,
-                      color: isActive ? active : dark, //check
+                      color: isActive ? active : dark,
                     ),
                   ),
                 ]),
