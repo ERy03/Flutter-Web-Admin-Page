@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
 import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 
-class MyWidget extends StatelessWidget {
+class InfoCardSmall extends StatelessWidget {
   final String title;
   final String? value;
   final bool isActive;
   final void Function()? onTap;
 
-  const MyWidget(
+  const InfoCardSmall(
       {Key? key,
       required this.title,
       this.value,
