@@ -39,7 +39,13 @@ class MyWidget extends StatelessWidget {
                 size: 24,
                 weight: FontWeight.w300,
                 color: isActive ? active : lightGrey,
-              )
+              ),
+              CustomText(
+                text: title,
+                size: 24,
+                weight: FontWeight.bold,
+                color: isActive ? active : lightGrey,
+              ),
             ],
           ),
         ),
