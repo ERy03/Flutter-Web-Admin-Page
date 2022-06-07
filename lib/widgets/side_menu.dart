@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
 import 'package:flutter_web_admin_page/helpers/responsiveness.dart';
+import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({Key? key}) : super(key: key);
@@ -29,6 +30,14 @@ class SideMenu extends StatelessWidget {
                         right: 12,
                       ),
                       child: Image.asset("assets/icons/logo.png"),
+                    ),
+                    Flexible(
+                      child: CustomText(
+                        text: "管理画面",
+                        size: 20,
+                        weight: FontWeight.bold,
+                        color: active,
+                      ),
                     ),
                   ],
                 ),
