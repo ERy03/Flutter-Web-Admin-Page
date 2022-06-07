@@ -29,6 +29,19 @@ class OverviewCardSmallScreen extends StatelessWidget {
           SizedBox(
             height: _width / 64,
           ),
+          InfoCardSmall(
+            title: "Cancelled delivery",
+            value: "3",
+            onTap: () {},
+          ),
+          SizedBox(
+            height: _width / 64,
+          ),
+          InfoCardSmall(
+            title: "Scheduled deliveries",
+            value: "3",
+            onTap: () {},
+          ),
         ],
       ),
     );
