@@ -1,14 +1,31 @@
 import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_web_admin_page/constants/style.dart';
 
 /// Example without a datasource
-class DataTable2SimpleDemo extends StatelessWidget {
-  const DataTable2SimpleDemo();
+class AvailableDrivers extends StatelessWidget {
+  const AvailableDrivers({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
       padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 30),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8),
+        boxShadow: [
+          BoxShadow(
+            offset: const Offset(0, 6),
+            color: lightGrey.withOpacity(0.1),
+            blurRadius: 12,
+          ),
+        ],
+        border: Border.all(
+          color: lightGrey,
+          width: 0.5,
+        ),
+      ),
       child: DataTable2(
           columnSpacing: 12,
           horizontalMargin: 12,
