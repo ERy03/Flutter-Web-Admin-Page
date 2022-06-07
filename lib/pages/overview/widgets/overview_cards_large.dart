@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/pages/overview/widgets/info_card.dart';
 
-class OverViewCardLargeScreen extends StatelessWidget {
-  const OverViewCardLargeScreen({Key? key}) : super(key: key);
+class OverviewCardLargeScreen extends StatelessWidget {
+  const OverviewCardLargeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

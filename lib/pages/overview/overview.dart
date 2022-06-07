@@ -29,7 +29,7 @@ class OverViewPage extends StatelessWidget {
         Expanded(
           child: ListView(
             children: [
-              OverViewCardLargeScreen(),
+              OverviewCardLargeScreen(),
             ],
           ),
         ),
