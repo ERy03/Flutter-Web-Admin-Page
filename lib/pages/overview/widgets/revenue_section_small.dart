@@ -46,7 +46,13 @@ class RevenueSectionSmall extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          Container(
+            width: 120,
+            height: 1,
+            color: lightGrey,
+          ),
+          Container(),
         ],
       ),
     );
