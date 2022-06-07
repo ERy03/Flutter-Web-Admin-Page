@@ -48,25 +48,21 @@ class AvailableDrivers extends StatelessWidget {
               minWidth: 600,
               columns: [
                 DataColumn2(
-                  label: Text('Column A'),
+                  label: Text('Name'),
                   size: ColumnSize.L,
                 ),
                 DataColumn(
-                  label: Text('Column B'),
+                  label: Text('Location'),
                 ),
                 DataColumn(
-                  label: Text('Column C'),
+                  label: Text('Rating'),
                 ),
                 DataColumn(
-                  label: Text('Column D'),
-                ),
-                DataColumn(
-                  label: Text('Column NUMBERS'),
-                  numeric: true,
+                  label: Text('Action'),
                 ),
               ],
               rows: List<DataRow>.generate(
-                  100,
+                  7,
                   (index) => DataRow(cells: [
                         DataCell(Text('A' * (10 - index % 10))),
                         DataCell(Text('B' * (10 - (index + 5) % 10))),
