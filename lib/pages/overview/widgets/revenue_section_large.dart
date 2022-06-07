@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
 import 'package:flutter_web_admin_page/pages/overview/widgets/bar_chart.dart';
+import 'package:flutter_web_admin_page/pages/overview/widgets/revenue_info.dart';
 import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 
 class RevenueSectionLarge extends StatelessWidget {
@@ -51,6 +52,24 @@ class RevenueSectionLarge extends StatelessWidget {
             height: 120,
             color: lightGrey,
           ),
+          Expanded(
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(
+                children: [
+                  RevenueInfo(
+                    title: "Today's revenue",
+                    amount: "23",
+                  ),
+                  RevenueInfo(
+                    title: "Last 7 days",
+                    amount: "150",
+                  ),
+                ],
+              )
+            ],
+          ))
         ],
       ),
     );
