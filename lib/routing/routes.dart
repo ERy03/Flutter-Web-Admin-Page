@@ -20,8 +20,8 @@ class MenuItem {
 }
 
 List sideMenuItems = [
-  overViewPageRoute,
-  driversPageRoute,
-  clientsPageRoute,
-  authenticationPageRoute,
+  MenuItem(overViewPageDisplayName, overViewPageRoute),
+  MenuItem(driversPageDisplayName, driversPageRoute),
+  MenuItem(clientsPageDisplayName, clientsPageRoute),
+  MenuItem(authenticationPageDisplayName, authenticationPageRoute),
 ];
