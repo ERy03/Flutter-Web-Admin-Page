@@ -32,7 +32,7 @@ class AvailableDrivers extends StatelessWidget {
         children: [
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               CustomText(
@@ -46,7 +46,7 @@ class AvailableDrivers extends StatelessWidget {
               columnSpacing: 12,
               horizontalMargin: 12,
               minWidth: 600,
-              columns: [
+              columns: const [
                 DataColumn2(
                   label: Text('Name'),
                   size: ColumnSize.L,
@@ -64,10 +64,10 @@ class AvailableDrivers extends StatelessWidget {
               rows: List<DataRow>.generate(
                   7,
                   (index) => DataRow(cells: [
-                        DataCell(CustomText(
+                        const DataCell(CustomText(
                           text: "Ryota Enoki",
                         )),
-                        DataCell(CustomText(
+                        const DataCell(CustomText(
                           text: "New York City",
                         )),
                         DataCell(Row(
