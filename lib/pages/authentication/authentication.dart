@@ -19,8 +19,12 @@ class AuthenticationPage extends StatelessWidget {
                 padding: EdgeInsets.only(right: 12),
                 child: Image.asset("assets/icons/logo.png"),
               ),
+              Expanded(child: Container())
             ],
-          )
+          ),
+          SizedBox(
+            height: 30,
+          ),
         ],
       ),
     ));
