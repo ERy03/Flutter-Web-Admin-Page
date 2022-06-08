@@ -27,7 +27,7 @@ class ClientsPage extends StatelessWidget {
             )),
         Expanded(
             child: ListView(
-          children: [DriversTable()],
+          children: [ClientsTable()],
         ))
       ],
     );
