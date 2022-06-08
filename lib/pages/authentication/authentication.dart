@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
 import 'package:flutter_web_admin_page/helpers/responsiveness.dart';
 import 'package:flutter_web_admin_page/layout.dart';
@@ -114,6 +115,11 @@ class AuthenticationPage extends StatelessWidget {
               ),
               alignment: Alignment.center,
               width: double.maxFinite,
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: const CustomText(
+                text: "Login",
+                color: Colors.white,
+              ),
             ),
           ),
         ],
