@@ -49,6 +49,8 @@ class AuthenticationPage extends StatelessWidget {
           ),
           TextField(
             decoration: InputDecoration(
+              labelText: "Email",
+              hintText: "user@domain.com",
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20),
               ),
