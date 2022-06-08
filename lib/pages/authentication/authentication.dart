@@ -7,7 +7,22 @@ class AuthenticationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: CustomText(text: "Authentication"),
-    );
+        child: Container(
+      constraints: BoxConstraints(maxWidth: 400),
+      padding: EdgeInsets.all(24),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.only(right: 12),
+                child: Image.asset("assets/icons/logo.png"),
+              ),
+            ],
+          )
+        ],
+      ),
+    ));
   }
 }
