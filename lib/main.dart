@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       initialRoute: authenticationPageRoute,
       unknownRoute: GetPage(
         name: "/not-found",
-        page: () => PageNotFound(),
+        page: () => const PageNotFound(),
         transition: Transition.fadeIn,
       ),
       getPages: [
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: authenticationPageRoute,
-          page: () => AuthenticationPage(),
+          page: () => const AuthenticationPage(),
         ),
       ],
       debugShowCheckedModeBanner: false,
