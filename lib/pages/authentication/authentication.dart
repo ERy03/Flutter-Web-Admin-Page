@@ -43,7 +43,10 @@ class AuthenticationPage extends StatelessWidget {
                 color: lightGrey,
               ),
             ],
-          )
+          ),
+          const SizedBox(
+            height: 15,
+          ),
         ],
       ),
     ));
