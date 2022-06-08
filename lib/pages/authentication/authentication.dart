@@ -126,6 +126,18 @@ class AuthenticationPage extends StatelessWidget {
 
           const SizedBox(
             height: 15,
+          ),
+
+          RichText(
+            text: TextSpan(
+              children: [
+                const TextSpan(text: "Do not have admin credentials?"),
+                TextSpan(
+                  text: "Request credentials",
+                  style: TextStyle(color: active),
+                ),
+              ],
+            ),
           )
         ],
       ),
