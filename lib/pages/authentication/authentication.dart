@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
 import 'package:flutter_web_admin_page/helpers/responsiveness.dart';
+import 'package:flutter_web_admin_page/layout.dart';
 import 'package:flutter_web_admin_page/widgets/custom_text.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AuthenticationPage extends StatelessWidget {
@@ -100,6 +102,12 @@ class AuthenticationPage extends StatelessWidget {
 
           const SizedBox(
             height: 15,
+          ),
+
+          InkWell(
+            onTap: () {
+              Get.offAll(() => SiteLayout());
+            },
           ),
         ],
       ),
