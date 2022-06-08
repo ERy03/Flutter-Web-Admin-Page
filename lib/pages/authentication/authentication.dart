@@ -111,6 +111,7 @@ class AuthenticationPage extends StatelessWidget {
               },
               child: Container(
                 decoration: BoxDecoration(
+                  color: active,
                   borderRadius: BorderRadius.circular(20),
                 ),
                 alignment: Alignment.center,
