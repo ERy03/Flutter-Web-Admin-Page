@@ -85,6 +85,25 @@ class AvailableDrivers extends StatelessWidget {
                               text: "4.$index",
                             ),
                           ],
+                        )),
+                        DataCell(Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: active,
+                              width: 0.5,
+                            ),
+                            color: light,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 6,
+                          ),
+                          child: CustomText(
+                            text: "Available Delivery",
+                            color: active.withOpacity(0.7),
+                            weight: FontWeight.bold,
+                          ),
                         ))
                       ]))),
         ],
