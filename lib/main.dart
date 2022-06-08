@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
 import 'package:flutter_web_admin_page/controllers/menu_controller.dart';
 import 'package:flutter_web_admin_page/controllers/navigation_controller.dart';
+import 'package:flutter_web_admin_page/layout.dart';
 import 'package:flutter_web_admin_page/pages/404/error_page.dart';
 import 'package:flutter_web_admin_page/pages/authentication/authentication.dart';
 import 'package:flutter_web_admin_page/routing/routes.dart';
@@ -26,6 +27,16 @@ class MyApp extends StatelessWidget {
         page: () => const PageNotFound(),
         transition: Transition.fadeIn,
       ),
+      getPages: [
+        GetPage(
+          name: rootRoute,
+          page: () => SiteLayout(),
+        ),
+        GetPage(
+          name: authenticationPageRoute,
+          page: () => AuthenticationPage(),
+        ),
+      ],
       debugShowCheckedModeBanner: false,
       title: "管理画面",
       theme: ThemeData(
