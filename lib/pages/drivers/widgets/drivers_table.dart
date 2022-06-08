@@ -86,7 +86,7 @@ class DriversTable extends StatelessWidget {
                   vertical: 6,
                 ),
                 child: CustomText(
-                  text: "Available Delivery",
+                  text: "Block Driver",
                   color: active.withOpacity(0.7),
                   weight: FontWeight.bold,
                 ),
