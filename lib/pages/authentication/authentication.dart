@@ -108,6 +108,11 @@ class AuthenticationPage extends StatelessWidget {
             onTap: () {
               Get.offAll(() => SiteLayout());
             },
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
           ),
         ],
       ),
