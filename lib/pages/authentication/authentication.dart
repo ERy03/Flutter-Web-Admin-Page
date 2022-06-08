@@ -44,13 +44,32 @@ class AuthenticationPage extends StatelessWidget {
               ),
             ],
           ),
+
           const SizedBox(
             height: 15,
           ),
+
+          //Email Input Field
           TextField(
             decoration: InputDecoration(
               labelText: "Email",
               hintText: "user@domain.com",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
+          ),
+
+          const SizedBox(
+            height: 15,
+          ),
+
+          //Password Input Field
+          TextField(
+            obscureText: true,
+            decoration: InputDecoration(
+              labelText: "Password",
+              hintText: "123",
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20),
               ),
