@@ -47,6 +47,13 @@ class AuthenticationPage extends StatelessWidget {
           const SizedBox(
             height: 15,
           ),
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
+          ),
         ],
       ),
     ));
