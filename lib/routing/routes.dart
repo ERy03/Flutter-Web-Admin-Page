@@ -12,6 +12,13 @@ const clientsPageRoute = "/clients";
 const authenticationPageDisplayName = "Log Out";
 const authenticationPageRoute = "/auth";
 
+class MenuItem {
+  final String name;
+  final String route;
+
+  MenuItem(this.name, this.route);
+}
+
 List sideMenuItems = [
   overViewPageRoute,
   driversPageRoute,
