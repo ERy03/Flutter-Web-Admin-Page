@@ -112,6 +112,8 @@ class AuthenticationPage extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
               ),
+              alignment: Alignment.center,
+              width: double.maxFinite,
             ),
           ),
         ],
