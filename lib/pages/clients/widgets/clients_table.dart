@@ -4,8 +4,8 @@ import 'package:flutter_web_admin_page/constants/style.dart';
 import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 
 /// Example without a datasource
-class DriversTable extends StatelessWidget {
-  const DriversTable({Key? key}) : super(key: key);
+class ClientsTable extends StatelessWidget {
+  const ClientsTable({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
