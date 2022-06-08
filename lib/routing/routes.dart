@@ -19,7 +19,7 @@ class MenuItem {
   MenuItem(this.name, this.route);
 }
 
-List sideMenuItems = [
+List<MenuItem> sideMenuItems = [
   MenuItem(overViewPageDisplayName, overViewPageRoute),
   MenuItem(driversPageDisplayName, driversPageRoute),
   MenuItem(clientsPageDisplayName, clientsPageRoute),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/controllers.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
 import 'package:flutter_web_admin_page/helpers/responsiveness.dart';
-import 'package:flutter_web_admin_page/pages/authentication/authentication.dart';
 import 'package:flutter_web_admin_page/routing/routes.dart';
 import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 import 'package:flutter_web_admin_page/widgets/side_menu_item.dart';
@@ -62,9 +61,9 @@ class SideMenu extends StatelessWidget {
                       itemName: item.name,
                       onTap: () {
                         if (item.route == authenticationPageRoute) {
+                          Get.offAllNamed(authenticationPageRoute);
                           menuController
                               .changeActiveItemTo(overViewPageDisplayName);
-                          Get.offAllNamed(authenticationPageRoute);
                         }
 
                         if (!menuController.isActive(item.name)) {

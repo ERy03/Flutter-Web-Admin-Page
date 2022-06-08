@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
-import 'package:flutter_web_admin_page/layout.dart';
+import 'package:flutter_web_admin_page/routing/routes.dart';
 import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -107,7 +107,7 @@ class AuthenticationPage extends StatelessWidget {
             //Login
             InkWell(
               onTap: () {
-                Get.offAll(() => SiteLayout());
+                Get.offAllNamed(rootRoute);
               },
               child: Container(
                 decoration: BoxDecoration(

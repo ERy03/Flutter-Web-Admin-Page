@@ -5,6 +5,6 @@ import 'package:flutter_web_admin_page/routing/routes.dart';
 
 Navigator localNavigator() => Navigator(
       key: navigationController.navigationKey,
-      initialRoute: overViewPageRoute,
       onGenerateRoute: generateRoute,
+      initialRoute: overViewPageRoute,
     );
