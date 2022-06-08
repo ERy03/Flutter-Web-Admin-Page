@@ -91,6 +91,10 @@ class AuthenticationPage extends StatelessWidget {
                   const CustomText(text: "Remeber me"),
                 ],
               ),
+              CustomText(
+                text: "Forgot Password",
+                color: active,
+              ),
             ],
           ),
         ],
