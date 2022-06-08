@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_admin_page/constants/style.dart';
 import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -33,6 +34,14 @@ class AuthenticationPage extends StatelessWidget {
                 style: GoogleFonts.roboto(
                     fontSize: 30, fontWeight: FontWeight.bold),
               )
+            ],
+          ),
+          Row(
+            children: [
+              CustomText(
+                text: "Welcome back to the admin panel",
+                color: lightGrey,
+              ),
             ],
           )
         ],
