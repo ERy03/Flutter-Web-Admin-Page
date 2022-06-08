@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_page/constants/style.dart';
+import 'package:flutter_web_admin_page/helpers/responsiveness.dart';
 import 'package:flutter_web_admin_page/widgets/custom_text.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -74,6 +75,23 @@ class AuthenticationPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
               ),
             ),
+          ),
+
+          const SizedBox(
+            height: 15,
+          ),
+
+          //Remeber me and Forgot Password
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  Checkbox(value: true, onChanged: (value) {}),
+                  const CustomText(text: "Remeber me"),
+                ],
+              ),
+            ],
           ),
         ],
       ),
