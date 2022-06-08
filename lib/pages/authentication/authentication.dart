@@ -105,6 +105,7 @@ class AuthenticationPage extends StatelessWidget {
             height: 15,
           ),
 
+          //Login
           InkWell(
             onTap: () {
               Get.offAll(() => SiteLayout());
@@ -122,6 +123,10 @@ class AuthenticationPage extends StatelessWidget {
               ),
             ),
           ),
+
+          const SizedBox(
+            height: 15,
+          )
         ],
       ),
     ));
